@@ -1,8 +1,7 @@
 #pragma once
 #include <string>
-#include "CustomEnums.h"
 #include <chrono>
-using namespace std::chrono;
+#include "CustomEnums.h"
 
 class PropertyListing {
 public:
@@ -21,10 +20,12 @@ public:
         int days_on_market,
         PropertyType property_type,
         SaleStatus sale_status,
-        std::chrono::year_month_day listingDate // we’ll parse to a date later
+        int year,
+        unsigned int month,
+        unsigned int day
     );
 
-    // Accessors (optional, if you want encapsulation)
+    // Accessors
     double pricePerSqFt() const;
 
 private:
@@ -48,5 +49,5 @@ private:
     SaleStatus sale_status;
 
     // Date
-    std::string listingDate;  // You could later change this to a proper date object
+    std::chrono::year_month_day listing_date;
 };
