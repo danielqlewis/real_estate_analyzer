@@ -140,11 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CsvReader.h" />
     <ClInclude Include="CsvWriter.h" />
     <ClInclude Include="CustomEnums.h" />
     <ClInclude Include="PropertyListing.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CsvReader.cpp" />
     <ClCompile Include="CsvWriter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PropertyListing.cpp" />

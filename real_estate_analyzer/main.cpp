@@ -1,5 +1,6 @@
 #include "PropertyListing.h"
 #include "CsvWriter.h"
+#include "CsvReader.h"
 #include <iostream>
 #include <vector>
 
@@ -10,16 +11,16 @@ int main() {
         "Springfield",
         "IL",
         "62701",
-        2000, // square feet
-        5000, // lot size
-        3, // bedrooms
-        2, // bathrooms
-        1990, // year built
-        250000, // price
-        45, // days on market
+        2000,
+        5000,
+        3,
+        2,
+        1990,
+        250000,
+        45,
         PropertyType::SingleFamily,
         SaleStatus::Active,
-        "2025-04-24" // listing date
+        "2025-04-24"
     );
 
     PropertyListing listing2(
@@ -27,16 +28,16 @@ int main() {
         "Springfield",
         "IL",
         "62702",
-        1500, // square feet
-        3000, // lot size
-        2, // bedrooms
-        1, // bathrooms
-        2005, // year built
-        199000, // price
-        30, // days on market
+        1500,
+        3000,
+        2,
+        1,
+        2005,
+        199000,
+        30,
         PropertyType::Condo,
         SaleStatus::Pending,
-        "2025-04-10" // listing date
+        "2025-04-10"
     );
 
     PropertyListing listing3(
@@ -44,16 +45,16 @@ int main() {
         "Capital City",
         "IL",
         "62704",
-        3200, // square feet
-        8000, // lot size
-        4, // bedrooms
-        3, // bathrooms
-        2020, // year built
-        450000, // price
-        15, // days on market
+        3200,
+        8000,
+        4,
+        3,
+        2020,
+        450000,
+        15,
         PropertyType::SingleFamily,
         SaleStatus::Sold,
-        "2025-03-15" // listing date
+        "2025-03-15"
     );
 
     // Create a vector and add the listings
@@ -63,11 +64,25 @@ int main() {
     listings.push_back(listing3);
 
     // Write the vector to a CSV file
-    bool success = CsvWriter::writePropertiesToFile(listings, "properties.csv");
+    std::string filename = "properties.csv";
+    bool success = CsvWriter::writePropertiesToFile(listings, filename);
 
     if (success) {
         std::cout << "Properties written to CSV successfully!" << std::endl;
         std::cout << "Wrote " << listings.size() << " properties to file." << std::endl;
+
+        // Now read the properties back
+        std::vector<PropertyListing> readListings = CsvReader::readPropertiesFromFile(filename);
+
+        std::cout << "Read " << readListings.size() << " properties from file." << std::endl;
+
+        // Display the first property to verify
+        if (!readListings.empty()) {
+            PropertyListing& first = readListings[0];
+            std::cout << "First property: " << first.getAddressLine()
+                << ", " << first.getTownName()
+                << " - $" << first.getPrice() << std::endl;
+        }
     }
     else {
         std::cout << "Failed to write properties to CSV." << std::endl;
