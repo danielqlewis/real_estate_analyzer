@@ -140,10 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CsvWriter.h" />
     <ClInclude Include="CustomEnums.h" />
     <ClInclude Include="PropertyListing.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CsvWriter.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="PropertyListing.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

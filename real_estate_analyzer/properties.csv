@@ -1,0 +1,4 @@
+Address,Town,State,Zip,Size,LotSize,Bedrooms,Bathrooms,YearBuilt,Price,DaysOnMarket,PropertyType,SaleStatus,ListingDate
+123 Main St,Springfield,IL,62701,2000,5000,3,2,1990,250000,45,SingleFamily,Active,2025-4-24
+456 Oak Ave,Springfield,IL,62702,1500,3000,2,1,2005,199000,30,Condo,Pending,2025-4-10
+789 Pine Blvd,Capital City,IL,62704,3200,8000,4,3,2020,450000,15,SingleFamily,Sold,2025-3-15
