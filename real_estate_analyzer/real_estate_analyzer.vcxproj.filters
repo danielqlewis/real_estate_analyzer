@@ -27,6 +27,12 @@
     <ClInclude Include="CsvReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PropertyFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCleaner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PropertyListing.cpp">
@@ -39,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CsvReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCleaner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

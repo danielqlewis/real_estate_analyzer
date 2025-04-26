@@ -143,13 +143,17 @@
     <ClInclude Include="CsvReader.h" />
     <ClInclude Include="CsvWriter.h" />
     <ClInclude Include="CustomEnums.h" />
+    <ClInclude Include="DataCleaner.h" />
+    <ClInclude Include="PropertyFilter.h" />
     <ClInclude Include="PropertyListing.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CsvReader.cpp" />
     <ClCompile Include="CsvWriter.cpp" />
+    <ClCompile Include="DataCleaner.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PropertyListing.cpp" />
+    <ClCompile Include="PropertyFilter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,101 @@
+Address,Town,State,Zip,Size,LotSize,Bedrooms,Bathrooms,YearBuilt,Price,DaysOnMarket,PropertyType,SaleStatus,ListingDate
+488 Elm St,Capital City,FL,99558,1471,6587,4,1,1989,615282,169,Condo,Sold,2024-05-14
+344 Oak Ave,Shelbyville,CA,53200,1307,9345,3,5,2019,806838,12,Condo,Pending,2024-09-11
+959 Cedar Ln,Ogdenville,IL,18005,2793,11056,6,2,1982,985025,47,SingleFamily,Sold,2024-07-11
+862 Elm St,Shelbyville,TX,91384,3045,4866,4,2,1995,1235046,161,SingleFamily,Sold,2025-04-05
+421 Elm St,Capital City,NY,64765,3064,8201,6,4,1971,1355507,102,Condo,Active,2024-11-01
+927 Maple Dr,Shelbyville,TX,58432,2118,13759,6,1,2002,541054,66,Condo,Pending,2024-08-30
+705 Oak Ave,Shelbyville,FL,43884,1077,18057,5,5,1953,387565,142,SingleFamily,Sold,2024-08-12
+780 Cedar Ln,Capital City,TX,11547,2594,13429,3,3,1972,1035577,44,Condo,Active,2024-04-29
+645 Washington Ave,Shelbyville,IL,98856,1458,3612,1,2,2017,782095,108,Apartment,Sold,2024-06-18
+175 Maple Dr,Ogdenville,NY,14881,2975,17473,6,1,1965,956830,106,Condo,Pending,2025-02-20
+282 Pine Blvd,Ogdenville,FL,76187,4526,14104,3,2,2002,157504,173,Apartment,Pending,2024-11-22
+204 Oak Ave,Springfield,NY,53076,3188,11466,3,2,1982,282068,161,Apartment,Sold,2024-12-05
+430 Elm St,Capital City,FL,27709,1250,3382,4,3,2015,568961,176,Apartment,Active,2024-07-08
+428 Pine Blvd,Ogdenville,FL,44689,3486,9446,3,5,1981,1244538,150,SingleFamily,Pending,2024-09-29
+875 Main St,Shelbyville,IL,53313,2316,10230,3,2,1953,796858,18,Condo,Active,2024-04-27
+534 Cedar Ln,Shelbyville,TX,23544,4484,12063,6,5,1974,1150839,107,SingleFamily,Active,2024-08-22
+904 Pine Blvd,North Haverbrook,NY,83660,4085,17234,4,3,1985,738711,101,SingleFamily,Active,2024-11-22
+398 Oak Ave,Capital City,NY,49295,969,1482,1,5,1996,966187,118,Condo,Pending,2024-10-25
+184 Oak Ave,Ogdenville,TX,43192,920,17797,2,5,1961,393211,148,Condo,Sold,2024-10-30
+945 Washington Ave,North Haverbrook,CA,18920,2373,7898,6,1,1959,654487,41,Condo,Active,2025-02-01
+123 Maple Dr,North Haverbrook,TX,88842,3366,7862,2,5,1993,1147989,126,Condo,Pending,2025-03-14
+590 Maple Dr,Ogdenville,FL,29656,4356,5506,1,3,1968,980132,89,Apartment,Pending,2024-11-07
+395 Main St,Ogdenville,IL,80352,3379,9875,2,4,1979,1476327,110,Condo,Sold,2025-03-08
+638 Maple Dr,Ogdenville,IL,89861,1225,14007,1,5,1997,1235880,102,SingleFamily,Active,2024-08-02
+979 Elm St,Shelbyville,FL,82540,2422,13709,2,4,2023,457338,57,Condo,Active,2025-01-09
+137 Washington Ave,Shelbyville,NY,55725,2085,14909,3,5,2016,1312112,99,Apartment,Active,2024-07-31
+737 Oak Ave,North Haverbrook,TX,79475,634,19511,2,1,2019,1132392,161,Apartment,Active,2025-02-05
+640 Pine Blvd,Capital City,FL,90162,2779,10371,6,1,2001,1422081,110,Condo,Active,2025-01-20
+767 Pine Blvd,Capital City,FL,74359,3137,3898,4,4,2004,1543237,37,SingleFamily,Pending,2024-10-23
+116 Main St,Shelbyville,NY,27339,4117,15133,3,5,2010,913665,128,Condo,Active,2024-07-23
+573 Washington Ave,Ogdenville,TX,30762,1349,15699,2,5,2007,1096708,158,Condo,Pending,2024-10-26
+990 Washington Ave,North Haverbrook,CA,27911,1355,19064,6,1,1983,1217494,172,Apartment,Pending,2025-03-05
+421 Oak Ave,Ogdenville,FL,39269,2329,11104,3,2,1987,417667,173,SingleFamily,Active,2024-06-10
+992 Pine Blvd,Capital City,FL,55175,958,16167,4,3,1956,424479,20,SingleFamily,Active,2024-08-10
+274 Washington Ave,Springfield,CA,78863,2435,15802,4,4,1988,1140929,5,Apartment,Pending,2024-10-19
+528 Main St,Capital City,FL,12773,4973,11608,6,5,1974,1571522,172,SingleFamily,Active,2025-02-08
+354 Elm St,North Haverbrook,TX,41756,3717,14111,5,4,1964,1270509,124,Condo,Sold,2024-05-19
+923 Elm St,Springfield,IL,76075,3904,7025,4,4,1969,1614062,79,Condo,Active,2024-05-27
+861 Pine Blvd,Springfield,CA,87984,2086,10519,2,5,1959,815053,18,SingleFamily,Pending,2025-01-14
+875 Maple Dr,Ogdenville,TX,15520,2477,11478,5,4,1961,1007271,145,Condo,Active,2024-05-26
+698 Maple Dr,Springfield,IL,25192,1210,19729,2,2,2017,948130,92,Apartment,Sold,2024-08-16
+602 Washington Ave,Shelbyville,TX,77860,1774,14397,5,2,1963,494481,56,Condo,Sold,2024-12-04
+595 Main St,Shelbyville,FL,11003,4518,2638,5,5,1998,563992,107,Condo,Sold,2025-01-22
+560 Main St,Capital City,IL,85903,2232,3523,3,2,1970,315105,3,Condo,Sold,2025-01-04
+683 Maple Dr,Springfield,NY,78328,3077,10584,2,1,2005,1174991,120,Apartment,Active,2024-10-06
+362 Main St,Capital City,FL,27579,2251,12685,3,3,2005,649727,132,Condo,Active,2024-09-20
+798 Elm St,Springfield,IL,72626,4349,18696,3,5,2011,1283531,7,Apartment,Active,2024-10-18
+742 Washington Ave,Springfield,TX,82147,761,11671,5,2,1951,436121,134,Apartment,Pending,2024-07-07
+512 Maple Dr,Ogdenville,NY,38686,4445,17018,1,4,2009,1028438,33,Condo,Pending,2024-06-01
+448 Maple Dr,Springfield,IL,80398,891,11873,5,2,1971,1020821,62,Condo,Sold,2024-06-18
+587 Elm St,Springfield,FL,57811,4116,14722,5,3,2016,1027351,38,Condo,Sold,2024-08-05
+400 Main St,Springfield,FL,29080,3436,18039,1,5,1983,919343,81,SingleFamily,Active,2025-01-22
+196 Elm St,North Haverbrook,NY,42177,4751,5910,5,5,1987,882565,135,Apartment,Pending,2024-05-08
+703 Elm St,Springfield,TX,17130,2738,13394,1,1,1987,394368,173,Apartment,Active,2024-11-08
+895 Pine Blvd,Capital City,TX,67471,539,13426,6,3,1963,206900,116,SingleFamily,Sold,2024-09-23
+162 Washington Ave,Shelbyville,TX,73324,2093,2772,3,5,1956,1206044,122,SingleFamily,Active,2025-03-08
+573 Oak Ave,North Haverbrook,CA,44223,1544,3229,5,4,1986,479330,125,Condo,Sold,2024-06-09
+890 Oak Ave,Ogdenville,FL,60256,4322,11498,3,4,1995,1161624,42,Apartment,Sold,2025-02-14
+112 Elm St,Capital City,NY,89714,1435,8866,6,2,2016,613142,83,Apartment,Active,2024-06-25
+282 Pine Blvd,Shelbyville,TX,64325,4996,13840,4,1,1989,434298,106,Condo,Sold,2025-02-14
+406 Maple Dr,Shelbyville,NY,14253,1939,11852,2,3,1974,1011802,76,SingleFamily,Active,2024-09-19
+624 Oak Ave,Springfield,CA,30072,1899,14933,3,2,1986,244469,19,Condo,Pending,2024-12-29
+315 Pine Blvd,Ogdenville,NY,40594,2162,19063,2,1,1957,996554,86,Condo,Sold,2024-09-19
+308 Main St,Shelbyville,TX,58014,800,1774,2,4,1985,400305,16,SingleFamily,Active,2024-06-04
+156 Maple Dr,Shelbyville,FL,45832,1838,16929,1,3,2009,895379,126,Apartment,Active,2024-10-27
+243 Maple Dr,Shelbyville,IL,39548,3944,19167,2,4,1990,1126594,118,Apartment,Pending,2024-10-10
+410 Main St,Springfield,TX,16778,2073,18906,4,3,1974,1117353,154,SingleFamily,Sold,2025-04-08
+612 Main St,Ogdenville,TX,86410,1444,12678,4,5,2019,186883,4,SingleFamily,Sold,2024-07-05
+197 Elm St,North Haverbrook,NY,27177,4671,5618,2,5,1971,666530,63,Apartment,Pending,2025-01-30
+640 Main St,Ogdenville,NY,82641,2554,16716,3,5,2004,372947,155,Apartment,Sold,2024-07-31
+234 Cedar Ln,Shelbyville,IL,71466,4498,18980,2,2,1986,939038,48,Apartment,Active,2024-07-18
+602 Pine Blvd,Springfield,TX,30107,4422,18012,1,4,1996,1771982,172,Condo,Pending,2025-04-07
+738 Maple Dr,North Haverbrook,CA,14590,849,15895,3,5,1950,964551,111,Condo,Active,2024-12-31
+942 Oak Ave,Ogdenville,FL,73499,3999,3103,6,4,1995,526858,67,Apartment,Pending,2024-07-22
+627 Washington Ave,Ogdenville,IL,96711,4760,9553,4,3,2005,1093132,75,Condo,Sold,2024-06-15
+269 Pine Blvd,Shelbyville,CA,91186,1489,2061,3,5,1999,1039414,126,Apartment,Sold,2025-03-28
+444 Maple Dr,North Haverbrook,TX,59021,3515,3298,5,4,1986,1282096,75,Condo,Sold,2024-05-19
+400 Washington Ave,Ogdenville,NY,85554,2130,5096,3,3,1964,791898,4,Condo,Pending,2024-08-29
+774 Elm St,Ogdenville,FL,96459,4991,2380,4,4,1984,1715695,113,Apartment,Active,2024-12-05
+899 Maple Dr,Ogdenville,CA,99670,546,5325,1,1,1995,383099,76,Condo,Sold,2024-08-29
+270 Maple Dr,North Haverbrook,IL,93131,3630,16438,3,1,2005,589420,43,SingleFamily,Sold,2024-08-21
+795 Pine Blvd,Ogdenville,IL,46176,2873,5704,2,2,1973,535119,43,Apartment,Active,2025-01-13
+631 Oak Ave,Shelbyville,CA,73165,3421,9934,5,4,1988,356238,90,SingleFamily,Sold,2024-12-18
+584 Cedar Ln,Shelbyville,NY,78764,1823,16074,3,2,1963,1269952,9,Condo,Active,2024-08-27
+464 Oak Ave,North Haverbrook,NY,53555,3648,7724,3,2,1970,690285,174,Apartment,Pending,2024-04-30
+694 Main St,North Haverbrook,TX,99329,4996,18649,1,4,1985,1583094,118,Apartment,Pending,2024-06-29
+793 Maple Dr,Capital City,TX,48411,708,13533,4,1,1959,201253,78,Condo,Pending,2025-03-24
+608 Washington Ave,North Haverbrook,FL,29402,901,18883,2,4,1963,86794,118,Condo,Active,2024-10-16
+415 Pine Blvd,Ogdenville,IL,98071,3185,9167,2,1,1998,546171,57,Condo,Active,2024-06-27
+573 Main St,Capital City,CA,91983,2550,11403,1,4,1958,1465894,62,SingleFamily,Active,2024-12-22
+147 Main St,Ogdenville,FL,65007,4233,16438,6,1,2018,1076227,60,Condo,Pending,2024-07-29
+670 Oak Ave,North Haverbrook,TX,18335,709,2036,1,3,2010,668402,107,SingleFamily,Sold,2024-12-16
+858 Oak Ave,Shelbyville,IL,33158,1535,8762,6,3,1979,1075914,108,Condo,Pending,2025-02-27
+558 Oak Ave,Shelbyville,FL,91647,821,1435,3,3,1969,919478,68,SingleFamily,Active,2024-09-08
+187 Elm St,North Haverbrook,IL,18939,4309,2054,4,4,1974,450346,180,Condo,Sold,2024-11-23
+485 Oak Ave,Springfield,IL,56774,2853,9932,1,2,1964,516725,65,Condo,Pending,2024-07-30
+144 Cedar Ln,Ogdenville,CA,61155,3415,6949,1,2,1991,449698,73,Apartment,Active,2024-07-28
+231 Elm St,Shelbyville,FL,47688,2182,6107,1,5,2020,335561,17,Condo,Pending,2024-05-22
+406 Main St,Shelbyville,CA,85903,3034,16260,1,2,1977,921513,9,SingleFamily,Pending,2024-05-09
+327 Elm St,North Haverbrook,CA,79581,3059,6295,3,1,1951,240564,113,Apartment,Pending,2025-01-18

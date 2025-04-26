@@ -1,91 +1,51 @@
 #include "PropertyListing.h"
 #include "CsvWriter.h"
 #include "CsvReader.h"
+#include "PropertyFilter.h"
+#include "DataCleaner.h"
 #include <iostream>
 #include <vector>
+#include <chrono>
 
 int main() {
-    // Create sample property listings
-    PropertyListing listing1(
-        "123 Main St",
-        "Springfield",
-        "IL",
-        "62701",
-        2000,
-        5000,
-        3,
-        2,
-        1990,
-        250000,
-        45,
-        PropertyType::SingleFamily,
-        SaleStatus::Active,
-        "2025-04-24"
-    );
+    // Test the data cleaning pipeline
+    std::string inputFile = "synthetic_property_data.csv";
+    std::string cleanedFile = "cleaned_property_data.csv";
 
-    PropertyListing listing2(
-        "456 Oak Ave",
-        "Springfield",
-        "IL",
-        "62702",
-        1500,
-        3000,
-        2,
-        1,
-        2005,
-        199000,
-        30,
-        PropertyType::Condo,
-        SaleStatus::Pending,
-        "2025-04-10"
-    );
+    std::cout << "Testing data cleaning pipeline..." << std::endl;
+    bool cleaningSuccess = DataCleaner::cleanData(inputFile, cleanedFile);
 
-    PropertyListing listing3(
-        "789 Pine Blvd",
-        "Capital City",
-        "IL",
-        "62704",
-        3200,
-        8000,
-        4,
-        3,
-        2020,
-        450000,
-        15,
-        PropertyType::SingleFamily,
-        SaleStatus::Sold,
-        "2025-03-15"
-    );
+    if (cleaningSuccess) {
+        std::cout << "Data cleaning successful!" << std::endl;
 
-    // Create a vector and add the listings
-    std::vector<PropertyListing> listings;
-    listings.push_back(listing1);
-    listings.push_back(listing2);
-    listings.push_back(listing3);
+        // Read the cleaned data
+        std::vector<PropertyListing> properties = CsvReader::readPropertiesFromFile(cleanedFile);
+        std::cout << "Read " << properties.size() << " properties from cleaned file." << std::endl;
 
-    // Write the vector to a CSV file
-    std::string filename = "properties.csv";
-    bool success = CsvWriter::writePropertiesToFile(listings, filename);
+        // Test the filtering system
+        PropertyFilter filter;
 
-    if (success) {
-        std::cout << "Properties written to CSV successfully!" << std::endl;
-        std::cout << "Wrote " << listings.size() << " properties to file." << std::endl;
+        // Example: Filter for properties with at least 3 bedrooms and priced under $400,000
+        filter.addFilter(PropertyFilter::bedroomsAtLeast(3));
+        filter.addFilter(PropertyFilter::maxPrice(400000));
 
-        // Now read the properties back
-        std::vector<PropertyListing> readListings = CsvReader::readPropertiesFromFile(filename);
+        // Apply the filters
+        std::vector<PropertyListing> filteredProperties = filter.apply(properties);
 
-        std::cout << "Read " << readListings.size() << " properties from file." << std::endl;
+        std::cout << "Found " << filteredProperties.size() << " properties matching the criteria." << std::endl;
 
-        // Display the first property to verify
-        if (!readListings.empty()) {
-            PropertyListing& first = readListings[0];
-            std::cout << "First property: " << first.getAddressLine()
-                << ", " << first.getTownName()
-                << " - $" << first.getPrice() << std::endl;
+        // Display some of the filtered properties
+        std::cout << "\nFiltered properties:" << std::endl;
+        for (size_t i = 0; i < std::min(filteredProperties.size(), size_t(5)); ++i) {
+            const PropertyListing& property = filteredProperties[i];
+            std::cout << property.getAddressLine() << ", " << property.getTownName()
+                << " - $" << property.getPrice() << " - "
+                << property.getNumberOfBed() << " beds, "
+                << property.getNumberOfBath() << " baths" << std::endl;
         }
     }
     else {
-        std::cout << "Failed to write properties to CSV." << std::endl;
+        std::cout << "Data cleaning failed." << std::endl;
     }
 
     return 0;
