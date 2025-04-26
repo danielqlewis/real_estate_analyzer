@@ -21,16 +21,19 @@ public:
     // Factory methods for common filter types
     static FilterFunction minSize(int minSize);
     static FilterFunction maxSize(int maxSize);
-    static FilterFunction sizeBetween(int minSize, int maxSize);
+    static FilterFunction minLotSize(int minSize);
+    static FilterFunction maxLotSize(int maxSize);
     static FilterFunction maxPrice(int maxPrice);
     static FilterFunction minPrice(int minPrice);
     static FilterFunction priceBetween(int minPrice, int maxPrice);
     static FilterFunction minDaysOnMarket(int days);
     static FilterFunction maxDaysOnMarket(int days);
-    static FilterFunction daysOnMarketBetween(int minDays, int maxDays);
+    static FilterFunction minYearBuilt(int minYear);
+    static FilterFunction maxYearBuilt(int maxYear);
     static FilterFunction yearBuiltBetween(int minYear, int maxYear);
     static FilterFunction inTown(const std::string& townName);
     static FilterFunction inState(const std::string& state);
+    static FilterFunction inZipcode(const std::string& zipcode);
     static FilterFunction hasPropertyType(PropertyType type);
     static FilterFunction hasSaleStatus(SaleStatus status);
     static FilterFunction listedAfter(const std::chrono::year_month_day& date);
