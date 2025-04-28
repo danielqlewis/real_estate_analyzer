@@ -11,3 +11,8 @@ enum class SaleStatus {
     Sold,
     Pending,
 };
+
+enum class AverageType {
+    Mean,
+    Median
+};
