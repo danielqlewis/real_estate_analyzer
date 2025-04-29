@@ -16,3 +16,4 @@ enum class AverageType {
     Mean,
     Median
 };
+
