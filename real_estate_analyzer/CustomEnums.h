@@ -17,3 +17,11 @@ enum class AverageType {
     Median
 };
 
+enum class ProgramState {
+    SelectingFullDataset,
+    SelectingFirstSubset,
+    SelectingSecondSubset,
+    RunningAnalysis,
+    DisplayingResults,
+    Exit
+};

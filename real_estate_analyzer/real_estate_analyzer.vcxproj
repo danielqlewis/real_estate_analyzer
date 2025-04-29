@@ -144,6 +144,7 @@
     <ClInclude Include="CsvWriter.h" />
     <ClInclude Include="CustomEnums.h" />
     <ClInclude Include="DataCleaner.h" />
+    <ClInclude Include="ProgramController.h" />
     <ClInclude Include="PropertyAnalyzer.h" />
     <ClInclude Include="PropertyFilter.h" />
     <ClInclude Include="PropertyListing.h" />
@@ -153,6 +154,7 @@
     <ClCompile Include="CsvWriter.cpp" />
     <ClCompile Include="DataCleaner.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProgramController.cpp" />
     <ClCompile Include="PropertyAnalyzer.cpp" />
     <ClCompile Include="PropertyListing.cpp" />
     <ClCompile Include="PropertyFilter.cpp" />
