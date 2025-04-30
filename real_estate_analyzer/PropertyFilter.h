@@ -49,6 +49,8 @@ public:
         return filters.size();
     }
 
+    bool removeFilterByIndex(size_t index);
+
 private:
     std::vector<FilterFunction> filters;
 };

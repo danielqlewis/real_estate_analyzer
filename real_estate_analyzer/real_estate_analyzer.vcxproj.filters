@@ -39,6 +39,9 @@
     <ClInclude Include="ProgramController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SubsetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PropertyListing.cpp">
@@ -65,5 +68,11 @@
     <ClCompile Include="ProgramController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SubsetManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
   </ItemGroup>
 </Project>

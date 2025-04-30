@@ -181,3 +181,77 @@ std::pair<double, double> PropertyAnalyzer::analyzeOverTime(
     // Calculate linear regression
     return linearRegression(x, y);
 }
+
+std::map<PropertyType, int> PropertyAnalyzer::countPropertiesByType(const std::vector<PropertyListing>& properties) {
+    std::map<PropertyType, int> counts;
+
+    // Initialize counts for all property types to zero
+    counts[PropertyType::SingleFamily] = 0;
+    counts[PropertyType::Condo] = 0;
+    counts[PropertyType::Apartment] = 0;
+
+    // Count properties of each type
+    for (const auto& property : properties) {
+        counts[property.getPropertyType()]++;
+    }
+
+    return counts;
+}
+
+std::map<SaleStatus, int> PropertyAnalyzer::countBySaleStatus(const std::vector<PropertyListing>& properties) {
+    std::map<SaleStatus, int> counts;
+
+    // Initialize counts for all sale statuses to zero
+    counts[SaleStatus::Active] = 0;
+    counts[SaleStatus::Sold] = 0;
+    counts[SaleStatus::Pending] = 0;
+
+    // Count properties of each status
+    for (const auto& property : properties) {
+        counts[property.getSaleStatus()]++;
+    }
+
+    return counts;
+}
+
+PropertyAnalyzer::PropertyAnalysisResult PropertyAnalyzer::analyzeDataset(
+    const std::vector<PropertyListing>& dataset,
+    bool includeTimeTrends
+) {
+    PropertyAnalysisResult result;
+
+    // Calculate basic statistics
+    result.totalProperties = dataset.size();
+
+    // Calculate price statistics
+    result.meanPrice = calculateAveragePrice(dataset, AverageType::Mean);
+    result.medianPrice = calculateAveragePrice(dataset, AverageType::Median);
+
+    // Calculate price per square foot statistics
+    result.meanPricePerSqFt = calculateAveragePricePerSqFt(dataset, AverageType::Mean);
+    result.medianPricePerSqFt = calculateAveragePricePerSqFt(dataset, AverageType::Median);
+
+    // Calculate days on market statistics
+    result.meanDaysOnMarket = calculateAverageDaysOnMarket(dataset, AverageType::Mean);
+    result.medianDaysOnMarket = calculateAverageDaysOnMarket(dataset, AverageType::Median);
+
+    // Calculate property type distribution
+    result.countByPropertyType = countPropertiesByType(dataset);
+
+    // Calculate sale status distribution
+    result.countBySaleStatus = countBySaleStatus(dataset);
+
+    // For time-based analysis
+    if (includeTimeTrends && dataset.size() >= 2) {
+        // Analyze price trend over time
+        result.priceTrend = analyzeOverTime(dataset, getPrice);
+
+        // Analyze price per square foot trend over time
+        result.pricePerSqFtTrend = analyzeOverTime(dataset, getPricePerSqFt);
+
+        // Analyze days on market trend over time
+        result.daysOnMarketTrend = analyzeOverTime(dataset, getDaysOnMarket);
+    }
+
+    return result;
+}

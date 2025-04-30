@@ -34,6 +34,17 @@ void PropertyFilter::clearFilters() {
     filters.clear();
 }
 
+
+bool PropertyFilter::removeFilterByIndex(size_t index) {
+    if (index >= filters.size()) {
+        return false;
+    }
+
+    filters.erase(filters.begin() + index);
+    return true;
+}
+
+
 // Implementation of factory methods
 
 // --- Sale Status ---
