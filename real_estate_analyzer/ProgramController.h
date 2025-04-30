@@ -9,32 +9,6 @@
 #include "CustomEnums.h"
 
 
-enum class FilterCategory {
-    SaleStatus,
-    PropertyType,
-    Location,
-    BedBaths,
-    Size,
-    LotSize,
-    ListingDate,
-    Price,
-    DaysOnMarket,
-    YearBuilt
-};
-
-struct FilterTracker {
-    bool saleStatus = false;
-    bool propertyType = false;
-    bool location = false;
-    bool bedBaths = false;
-    bool size = false;
-    bool lotSize = false;
-    bool listingDate = false;
-    bool price = false;
-    bool daysOnMarket = false;
-    bool yearBuilt = false;
-};
-
 struct ComparativeAnalysis {
     std::string fullDatasetName;
     std::string firstSubsetName;
@@ -66,10 +40,6 @@ private:
     SubsetManager firstSubsetManager;
     SubsetManager secondSubsetManager;
 
-    
-    void clearSubsetFilters(int subsetIndex);
-    size_t getSubsetFilterCount(int subsetIndex) const;
-    bool applySubsetFilters(int subsetIndex);
 
     FilterTracker firstSubsetFilterTracker;
     FilterTracker secondSubsetFilterTracker;
@@ -91,7 +61,6 @@ public:
 
     // Core flow methods
     bool loadFullDataset(const std::string& filePath);
-    bool addFilterToSubset(int subsetIndex, FilterCategory category, PropertyFilter::FilterFunction filter);
     bool createFirstSubset();
     bool createSecondSubset();
     void runAnalysis();
