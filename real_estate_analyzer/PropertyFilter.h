@@ -45,7 +45,9 @@ public:
     static FilterFunction bathroomsAtLeast(int num);
     static FilterFunction bathroomsAtMost(int num);
 
-    // More filters can be added as needed
+    size_t getFilterCount() const {
+        return filters.size();
+    }
 
 private:
     std::vector<FilterFunction> filters;

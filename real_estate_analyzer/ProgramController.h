@@ -3,7 +3,36 @@
 #include <string>
 #include <vector>
 #include "PropertyListing.h"
+#include "PropertyFilter.h"
 #include "CustomEnums.h"
+
+
+enum class FilterCategory {
+    SaleStatus,
+    PropertyType,
+    Location,
+    BedBaths,
+    Size,
+    LotSize,
+    ListingDate,
+    Price,
+    DaysOnMarket,
+    YearBuilt
+};
+
+struct FilterTracker {
+    bool saleStatus = false;
+    bool propertyType = false;
+    bool location = false;
+    bool bedBaths = false;
+    bool size = false;
+    bool lotSize = false;
+    bool listingDate = false;
+    bool price = false;
+    bool daysOnMarket = false;
+    bool yearBuilt = false;
+};
+
 
 class ProgramController {
 private:
@@ -19,6 +48,18 @@ private:
     std::string fullDatasetPath;
     std::string firstSubsetName;
     std::string secondSubsetName;
+
+    PropertyFilter firstSubsetFilter;
+    PropertyFilter secondSubsetFilter;
+
+    bool addFilterToSubset(int subsetIndex, FilterCategory category, PropertyFilter::FilterFunction filter);
+    void clearSubsetFilters(int subsetIndex);
+    size_t getSubsetFilterCount(int subsetIndex) const;
+    bool applySubsetFilters(int subsetIndex);
+
+    FilterTracker firstSubsetFilterTracker;
+    FilterTracker secondSubsetFilterTracker;
+
 
 public:
     // Constructor and destructor
